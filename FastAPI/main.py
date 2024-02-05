@@ -23,3 +23,9 @@ class TransactionBase(BaseModel):
     description: str
     is_income: bool
     date: str
+
+class TransactionModel(TransactionBase):
+    id: int
+
+    class Config:
+        orm_mode = True
