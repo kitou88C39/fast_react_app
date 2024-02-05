@@ -16,3 +16,10 @@ app.add_middleware(
     CORSMiddleware,
     add_origins=origins,
 )
+
+class TransactionBase(BaseModel):
+    amount: float
+    category: str
+    description: str
+    is_income: bool
+    date: str
