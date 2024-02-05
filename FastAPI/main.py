@@ -29,3 +29,10 @@ class TransactionModel(TransactionBase):
 
     class Config:
         orm_mode = True
+
+def get_db():
+    db = SessionLoacal()
+    try:
+        yield db
+    finally:
+        db.close()
