@@ -33,6 +33,13 @@ const App = () => {
     event.preventDefault();
     await api.post('/transactions/', formData);
     fetchTransactions();
+    setFormData({
+      amount: '',
+      category: '',
+      description: '',
+      is_income: false,
+      date: '',
+    });
   };
 };
 
