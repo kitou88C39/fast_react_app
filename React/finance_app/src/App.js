@@ -56,6 +56,14 @@ const App = () => {
             <label htmlFor='amount' className='form-label'>
               Amount
             </label>
+            <input
+              type='text'
+              className='form-control'
+              id='amount'
+              name='amount'
+              onChange={handleInputChange}
+              value={formData.amount}
+            />
           </div>
         </form>
       </div>
