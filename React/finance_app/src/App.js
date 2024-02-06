@@ -100,13 +100,29 @@ const App = () => {
             </label>
             <input
               type='text'
-              className='form-control'
               id='is_income'
               name='is_income'
               onChange={handleInputChange}
               value={formData.is_income}
             />
           </div>
+
+          <div className='mb-3'>
+            <label htmlFor='date' className='form-label'>
+              Date
+            </label>
+            <input
+              type='text'
+              id='date'
+              name='date'
+              onChange={handleInputChange}
+              value={formData.date}
+            />
+          </div>
+
+          <button type='submit' className='btn btn-primary'>
+            Submit
+          </button>
         </form>
       </div>
     </div>
