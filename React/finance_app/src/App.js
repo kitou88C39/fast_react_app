@@ -31,6 +31,8 @@ const App = () => {
   };
   const handleFormSubmit = async (event) => {
     event.preventDefault();
+    await api.post('/transactions/', formData);
+    fetchTransactions();
   };
 };
 
