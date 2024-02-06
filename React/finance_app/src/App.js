@@ -44,7 +44,11 @@ const App = () => {
   return (
     <div>
       <nav className='navbar navbar-dark bg-primary'>
-        <div className='container-fluid'></div>
+        <div className='container-fluid'>
+          <a className='navbar-brand' href='https://www.example.com/'>
+            Finance app
+          </a>
+        </div>
       </nav>
     </div>
   );
