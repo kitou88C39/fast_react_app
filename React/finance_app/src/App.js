@@ -1,11 +1,4 @@
-import './App.css';
-
-function App() {
-  return (
-    <div>
-      <h1></h1>
-    </div>
-  );
-}
+import React, { useState, useEffect } from 'react';
+import api from './api';
 
 export default App;
