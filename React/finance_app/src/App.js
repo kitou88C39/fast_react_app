@@ -29,6 +29,9 @@ const App = () => {
       [event.target.name]: value,
     });
   };
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+  };
 };
 
 export default App;
