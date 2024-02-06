@@ -50,6 +50,15 @@ const App = () => {
           </a>
         </div>
       </nav>
+      <div className='container'>
+        <form onSubmit={handleFormSubmit}>
+          <div className='mb-3 mt-3'>
+            <label htmlFor='amount' className='form-label'>
+              Amount
+            </label>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
