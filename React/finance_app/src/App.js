@@ -18,6 +18,13 @@ const App = () => {
   useEffect(() => {
     fetchTransactions();
   }, []);
+
+  const handleInputChange = (event) => {
+    const value =
+      event.target.type === 'checkbox'
+        ? event.target.checked
+        : event.target.value;
+  };
 };
 
 export default App;
