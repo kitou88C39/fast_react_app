@@ -82,7 +82,7 @@ const App = () => {
 
           <div className='mb-3'>
             <label htmlFor='description' className='form-label'>
-              Description'
+              Description
             </label>
             <input
               type='text'
@@ -91,6 +91,20 @@ const App = () => {
               name='description'
               onChange={handleInputChange}
               value={formData.description}
+            />
+          </div>
+
+          <div className='mb-3'>
+            <label htmlFor='is_income' className='form-label'>
+              Income?
+            </label>
+            <input
+              type='text'
+              className='form-control'
+              id='is_income'
+              name='is_income'
+              onChange={handleInputChange}
+              value={formData.is_income}
             />
           </div>
         </form>
