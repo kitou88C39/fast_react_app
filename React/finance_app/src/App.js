@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import api from './api';
 
 const App = () => {
-  const [transaction, setTransaction] = useState([]);
+  const [transactions, setTransactions] = useState([]);
   const [formData, setFormData] = useState({
     amount: '',
     category: '',
@@ -13,7 +13,11 @@ const App = () => {
 
   const fetchTransactions = async () => {
     const response = await api.get('/transaction/');
+    setTransactions(response.data);
   };
+  useEffect(() => {
+    fetchTransactions();
+  }, []);
 };
 
 export default App;
