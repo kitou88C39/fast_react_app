@@ -41,6 +41,13 @@ const App = () => {
       date: '',
     });
   };
+  return (
+    <div>
+      <nav className='navbar navbar-dark bg-primary'>
+        <div className='container-fluid'></div>
+      </nav>
+    </div>
+  );
 };
 
 export default App;
