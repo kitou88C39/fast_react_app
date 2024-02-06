@@ -24,6 +24,10 @@ const App = () => {
       event.target.type === 'checkbox'
         ? event.target.checked
         : event.target.value;
+    setFormData({
+      ...formData,
+      [event.target.name]: value,
+    });
   };
 };
 
