@@ -10,6 +10,10 @@ const App = () => {
     is_income: false,
     date: '',
   });
+
+  const fetchTransactions = async () => {
+    const response = await api.get('/transaction/');
+  };
 };
 
 export default App;
