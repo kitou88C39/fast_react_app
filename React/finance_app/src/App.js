@@ -66,17 +66,31 @@ const App = () => {
             />
           </div>
 
-          <div className='mb-3 mt-3'>
-            <label htmlFor='amount' className='form-label'>
-              Amount
+          <div className='mb-3'>
+            <label htmlFor='category' className='form-label'>
+              Category
             </label>
             <input
               type='text'
               className='form-control'
-              id='amount'
-              name='amount'
+              id='category'
+              name='category'
               onChange={handleInputChange}
-              value={formData.amount}
+              value={formData.category}
+            />
+          </div>
+
+          <div className='mb-3'>
+            <label htmlFor='description' className='form-label'>
+              Description'
+            </label>
+            <input
+              type='text'
+              className='form-control'
+              id='description'
+              name='description'
+              onChange={handleInputChange}
+              value={formData.description}
             />
           </div>
         </form>
